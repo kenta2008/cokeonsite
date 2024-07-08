@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coke ON Pay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="purchase-container">
+    <div class="header">
+        Coke ON Payで購入
+    </div>
+    <div class="products">
+        <div class="product" data-name="コーク" data-price="150" data-image="images/rekora.png">
+            <img src="images/rekora.png" alt="Coke 500ml">
+            <p>コーク 500ml</p>
+            <p>¥150</p>
+        </div>
+        <div class="product" data-name="コーク ゼロ" data-price="150" data-image="images/recokezero.png">
+            <img src="images/recokezero.png" alt="Coke Zero 500ml">
+            <p>コーク ゼロ 500ml</p>
+            <p>¥150</p>
+        </div>
+        <div class="product" data-name="アクエリアス" data-price="150" data-image="images/reaku.png">
+            <img src="images/reaku.png" alt="Aquarius 500ml">
+            <p>アクエリアス 500ml</p>
+            <p>¥150</p>
+        </div>
+        <div class="product" data-name="綾鷹" data-price="150" data-image="images/reayataka.png">
+            <img src="images/reayataka.png" alt="Ayata 500ml">
+            <p>綾鷹 500ml</p>
+            <p>¥150</p>
+        </div>
+        <div class="product" data-name="いろはす" data-price="130" data-image="images/reiro.png">
+            <img src="images/reiro.png" alt="Irohasu 500ml">
+            <p>いろはす 500ml</p>
+            <p>¥130</p>
+        </div>
+        <div class="product" data-name="レッドブル" data-price="200" data-image="images/reredbull.png">
+            <img src="images/reredbull.png" alt="Redbull 250ml">
+            <p>レッドブル 250ml</p>
+            <p>¥200</p>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+    <div class="pay-section">
+        <p id="selected-product">選択された製品: なし</p>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal-content" id="modal-content">
+        <img id="modal-image" src="" alt="">
+        <p id="modal-name"></p>
+        <p id="modal-price"></p>
+        <div class="swipe-indicator">
+            <img src="images/swipe-up.png" alt="Swipe up">
+            <p class="swipe-text">スワイプして購入確定</p>
+        </div>
+    </div>
+</div>
+
+<div class="complete-message" id="complete-message">
+    <h2>支払いが成功しました！</h2>
+</div>
+
+<div class="thank-you-message" id="thank-you-message">
+    <h2>購入ありがとうございます</h2>
+    <p>リサイクルしてね</p>
+</div>
+
+<audio id="complete-sound" src="siharai.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
